@@ -1,0 +1,164 @@
+.INTERFACEHEADER {
+  box-shadow: 0 0 25px #58473c56;
+}
+
+.fotocapa {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+}
+
+.COLUNASDETEXTO {
+  text-indent: 20px;
+  line-height: 1.5;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.COLUNASDETEXTO h1 {
+  text-align: justify;
+  margin: 0;
+  text-indent: 0;
+  line-height: 1;
+  margin-bottom: 48px;
+}
+
+.COLUNASDETEXTO p {
+  color: #58473c;
+}
+
+.autoriatxt {
+  margin-bottom: 48px;
+}
+
+.nomeautore {
+  text-align: right;
+  line-height: 0.5;
+}
+
+.REFN {
+  vertical-align: super;
+  font-size: 75%;
+  color: #a93535;
+}
+
+.NEGRITOTX {
+  font-weight: bolder;
+}
+
+.CITAC {
+  font-size: 80%;
+  margin-left: 4em;
+}
+
+/* MASONRY */
+.GRID-MASONRY-PG {
+ max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.GRID-MASONRY-PG::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.GRID-SIZER-PG,
+.ITEM-PG {
+  width: 19%;
+}
+
+.GUTTER-SIZER-PG {
+  width: 1.25%;
+}
+
+.ITEM-PG {
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ITEM-PG img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: saturate(20%);
+  transition: 0.3s ease;
+}
+
+.ITEM-PG:hover img {
+  filter: saturate(120%);
+}
+
+.OVERLAY-PG {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+  padding: 150px 16px 16px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.ITEM-PG:hover .OVERLAY-PG {
+  opacity: 1;
+}
+
+.pg-titulo {
+  color: #e1b545;
+  font-family: 'Ubuntu Mono';
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.pg-artista {
+  color: #ede5d0;
+  font-family: 'Ubuntu Mono';
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
+/* SUBMISSÃO */
+.COPYPASTEsub {
+  margin-left: 449px;
+  margin-right: 449px;
+  margin-bottom: 100px;
+}
+
+.textoSUB {
+  border: 1px solid #a93535;
+  font-family: 'Ubuntu Mono';
+  max-width: 350px;
+  height: 100px;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+.textoSUB span {
+  font-weight: bolder;
+}
+
+.textoSUB p {
+  text-align: center;
+  line-height: 5px;
+}
+
+body.escuro .textoSUB {
+  background-color: transparent;
+  border: 1px solid #e1b545;
+  color: #e1b545;
+}
+
+/* MODO ESCURO */
+body.escuro .COLUNASDETEXTO p {
+  color: #e1d5b6;
+}

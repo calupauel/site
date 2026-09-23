@@ -1,0 +1,109 @@
+body.escuro .HERO H1,
+body.escuro .TXESC p {
+  color: #ede5d0;
+}
+
+body.escuro .TXESC H1 {
+  color: #a93535;
+}
+
+main {
+  max-width: 720px;
+  margin: 48px auto 48px;
+  line-height: 1.5;
+  padding: 0 24px;
+}
+
+.HERO {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.HERO H1 {
+  color: #58473c;
+  font-size: 50px;
+}
+
+.CAPARAS {
+  margin-bottom: 24px;
+  max-width: 720px;
+  max-height: 300px;
+}
+
+.CAPARAS img {
+  width: 720px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.SECESC01 .ITEM {
+  margin-bottom: 24px;
+}
+
+.CONTAINERTXS {
+  background-color: #ede5d0;
+  border-radius: 16px;
+  max-width: 720px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  cursor: default;
+}
+
+.TX00000 {
+  text-decoration: none;
+}
+
+.TX00000 h1 {
+  color: #af397e;
+}
+
+.TX00000 p {
+  color: #58473c;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.FTHERO {
+  max-height: 380px;
+}
+
+.FTESC img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.FTESC img:hover {
+  cursor: pointer;
+  transition: .5s;
+  scale: 99%;
+  transition: .5s ease;
+  box-shadow: 0 0 15px #58473c96;
+}
+
+.INTEGRABTN {
+  margin: 0;
+    background-color: #a93535;
+    color: #e1d5b6;
+    border-radius: 200px;
+    display: inline-flex;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 100;
+    transition: .5s ease;
+    text-decoration: none
+}
+
+.INTEGRABTN:hover {
+    color: #a93535;
+    background-color: #e1d5b6;
+    cursor: pointer;
+    transition: .5s ease;
+    padding: 12px 20px 12px 20px;
+    box-shadow: 15px #58473c;
+}

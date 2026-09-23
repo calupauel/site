@@ -1,0 +1,16 @@
+.HELLO, .HERO {
+    max-width: 720px;
+    margin: 48px auto 48px;
+    line-height: 1.5;
+    padding: 0 24px;
+}
+
+.CONTAINERHERO {
+    padding: 0 24px;
+}
+
+.CONTAINERHERO:hover {
+  scale: 1;
+  box-shadow: none;
+  cursor: default;
+}

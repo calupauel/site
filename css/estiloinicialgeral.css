@@ -1,0 +1,551 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e1d5b6;
+  color: #a93535;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body.escuro {
+  background-color: #181717;
+  color: #ede5d0;
+}
+
+body.escuro .TXHERO H1,
+body.escuro .TXSECT01 H1 {
+  color: #a93535;
+}
+
+body.escuro .HELLO H1 {
+  color: #ede5d0;
+}
+
+body.escuro .CONTAINERTXS,
+body.escuro .CONTAINERHERO,
+body.escuro .CARDESC {
+  background-color: #111111;
+}
+
+body.escuro .CONTAINERTXS p {
+  color: #e1b545;
+}
+
+body.escuro .CONTAINERHERO .HERO H3,
+body.escuro .CONTAINERHERO .TXHERO H3,
+body.escuro .CARDESC .TXSECT01 H3,
+body.escuro .TXHERO H3 {
+  background-color: #181717;
+  border-color: #e1b545;
+  color: #e1b545;
+}
+
+body.escuro .CONTAINERHERO .HERO H3:hover,
+body.escuro .CONTAINERHERO .TXHERO H3:hover,
+body.escuro .CARDESC .TXSECT01 H3:hover,
+body.escuro .TXHERO H3:hover {
+  background-color: #e1b545;
+  border-color: #e1b545;
+  color: #111111
+}
+
+body.escuro .TXHERO p,
+body.escuro .TXSECT01 p,
+body.escuro .COLUNASDETEXTO p {
+  color: #ede5d0;
+}
+
+body.escuro .COLUNASDETEXTO H1 {
+  color: #af397e;
+}
+
+body.escuro .INTERFACEHEADER {
+  background-color: #111111;
+}
+
+body.escuro .MENUPC a:hover {
+  color: #111111;
+  background-color: #e1b545;
+}
+
+body.escuro .VERMAIS a {
+  border: 1px solid #e1b545;
+  background-color: transparent;
+  color: #e1b545;
+}
+
+body.escuro .VERMAIS a:hover {
+  box-shadow: 0px 0px 15px #e1b54556;
+  background-color: #e1b545;
+  color: #111111;
+}
+
+body.escuro .filtro:hover {
+  background: #e1b545;
+  color: #181717;
+  font-style: italic;
+}
+
+body.escuro .filtro.ativo {
+  background: #e1b545;
+  color: #181717;
+}
+
+body.escuro .pag-num.ativo,
+body.escuro .pag-btn:hover,
+body.escuro .pag-num:hover {
+  color: #111111;
+}
+
+body.escuro .REFN {
+  color: #e1b545;
+}
+
+body.escuro .INTEGRABTN {
+  background-color: #181717;
+  border-color: #e1b545;
+  color: #e1b545;
+}
+
+body.escuro .INTEGRABTN:hover {
+  background-color: #e1b545;
+  border-color: #e1b545;
+  color: #111111
+}
+
+.btn-tema {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.btn-tema input {
+  display: none;
+}
+
+.track {
+  width: 56px;
+  height: 28px;
+  background-color: transparent;
+  border: 1px solid #e1b545;
+  border-radius: 999px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: #e1b545;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s ease;
+  font-size: 12px;
+}
+
+.icon {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+body.escuro .track {
+  background-color: transparent;
+}
+
+body.escuro .thumb {
+  left: 32px;
+  color: #111111;
+}
+
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url(fontes/Coolvetica\ Regular.otf);
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(fontes/Ubuntu\ Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url(fontes/Ubuntu\ Mono\ Regular.ttf);
+}
+
+body p {
+  font-family: 'Ubuntu';
+  text-align: justify;
+}
+
+body H1 {
+  font-family: 'Coolvetica'
+}
+
+body H3 {
+  font-family: 'Ubuntu Mono';
+}
+
+.NEGRITOTX {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.INTERFACEHEADER {
+  background-color: #a93535;
+}
+
+.CONTAINERHEADER {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+div.LOGOHORIZONTAL img {
+  height: 70px;
+  width: auto;
+  justify-items: left;
+}
+
+nav.MENUPC {
+  justify-items: right;
+}
+
+.MENUPC ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.MENUPC ul li {
+  display: inline-flex;
+  list-style-type: none;
+  padding: 0px 12px;
+}
+
+.MENUPC ul li a {
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 16px;
+  padding: 8px 14px;
+  color: #e1b545;
+  font-family: 'Ubuntu Mono';
+  font-size: 18px;
+  transition: .3s;
+}
+
+.MENUPC ul li a:hover {
+  background-color: #03030311;
+  scale: 102%;
+  font-style: italic;
+  transition: .3s;
+}
+
+
+.HELLO H1 {
+  color: #58473c;
+  line-height: 48px;
+}
+
+#typing::after {
+  content: '|';
+  animation: piscar 0.8s infinite;
+}
+
+@keyframes piscar {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.HERO {
+  margin-bottom: 24px;
+}
+
+.TXHERO {
+  margin: 24px;
+}
+
+.HERO H1 {
+  color: #af397e;
+}
+
+.HERO H3 {
+  margin: 0;
+  background-color: #a93535;
+  color: #e1d5b6;
+  border-radius: 200px;
+  display: inline-flex;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 100;
+  transition: .5s ease;
+}
+
+.HERO H3:hover {
+  color: #a93535;
+  background-color: #e1d5b6;
+  cursor: pointer;
+  transition: .5s ease;
+  padding: 12px 20px 12px 20px;
+}
+
+.HERO p {
+  color: #58473c;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.CONTAINERHERO {
+  background-color: #ede5d0;
+  border-radius: 16px;
+  display: flex;
+  max-width: 1200px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.CONTAINERHERO:hover,
+.CARDESC:hover {
+  scale: 100.8%;
+  transition: 0.5s;
+  box-shadow: 0px 0px 15px #58473c56;
+}
+
+.FTHERO {
+  max-height: 380px;
+}
+
+.FTHERO img {
+  max-width: 588px;
+  height: 400px;
+  object-fit: cover;
+  transition: 0.3s ease;
+  filter: saturate(20%)
+}
+
+.FTHERO img:hover {
+  filter: saturate(100%);
+  cursor: pointer;
+  transition: 1s;
+}
+
+/*SECTION01*/
+
+.SECT01 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.TXSECT01 {
+  margin: 24px;
+}
+
+.SECT01 H1 {
+  color: #af397e;
+  font-size: 25px;
+}
+
+.SECT01 H3 {
+  margin: 0;
+  background-color: #a93535;
+  color: #e1d5b6;
+  border-radius: 200px;
+  display: inline-flex;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 100;
+  transition: 0.5s ease;
+}
+
+.SECT01 H3:hover {
+  color: #a93535;
+  background-color: #e1d5b6;
+  padding: 12px 20px 12px 20px;
+  cursor: pointer;
+  transition: ease .5s;
+}
+
+.SECT01 p {
+  color: #58473c;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.SECT01 {
+  gap: 24px;
+}
+
+.CARDESC {
+  background-color: #ede5d0;
+  border-radius: 16px;
+  flex: 1;
+  max-width: 588px;
+  gap: 24px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.FIXAARTG {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+.FTSEC01 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.3s ease;
+  filter: saturate(20%)
+}
+
+.FTSEC01 img:hover {
+  filter: saturate(100%);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.VERMAIS {
+  justify-content: center;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.VERMAIS a {
+  text-decoration: none;
+  color: #e1b545;
+  background-color: #a93535;
+  padding: 12px 24px;
+  border-radius: 26px;
+  font-family: 'Ubuntu Mono';
+  transition: .5s;
+}
+
+.VERMAIS a:hover {
+  transition: .5s;
+  scale: 102%;
+  box-shadow: 0px 0px 15px #58473c56;
+  font-style: italic;
+}
+
+
+.FOOTERCONTAINER {
+  background-color: #141414;
+}
+
+.FOOTERINNER {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.FOOTERCONTAINER ul {
+  margin-top: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.FOOTERCONTAINER img {
+  height: 120px;
+  width: auto;
+}
+
+.FOOTERCONTAINER div {
+  color: #ede5d0;
+  font-family: 'Ubuntu Mono';
+  font-weight: 100;
+  font-style: italic;
+  font-size: 25px;
+  text-align: right;
+  transition: .3s ease;
+}
+
+.FOOTERCONTAINER div span {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 1000;
+}
+
+.FOOTERCONTAINER div:hover {
+  color: #a93535;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.tem-dropdown {
+  position: relative;
+}
+
+.MENUPC .dropdown {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  left: 0;
+  top: 100%;
+  background-color: #a93535;
+  list-style: none;
+  border-radius: 26px;
+  padding-top: 40px;
+  margin: 0;
+  z-index: 999;
+}
+
+.MENUPC .dropdown li {
+  padding: 8px;
+  display: block;
+}
+
+.MENUPC .dropdown li a {
+  display: block;
+  font-size: 18px;
+  border-radius: 26px;
+}
+
+.MENUPC .dropdown li a:hover {
+  padding: 12px 20px 12px 20px;
+}
+
+body.escuro .MENUPC .dropdown {
+  background-color: #111111;
+  font-size: auto;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloinicialgeral.css">
+    <link rel="stylesheet" href="css/estilo-listagem.css">
+    <title>CALUPA ✹ Galeria</title>
+</head>
+
+<body>
+    <div class="interface">
+
+        <header>
+            <div class="INTERFACEHEADER">
+                <div class="CONTAINERHEADER">
+                    <div class="LOGOHORIZONTAL">
+                        <a href="paginainicial.html">
+                            <img id="logo-pagina" src="imagens/logoCALUPA (horizontal).svg" alt="HORIZONTALLOGO">
+                        </a>
+                    </div>
+
+                    <nav class="MENUPC">
+                        <ul>
+                            <li><a id="revista" href="REVISTA.html">&gt;revista</a></li>
+                            <li class="tem-dropdown"><a id="acervo" href="ACERVO.html">&gt;acervo</a>
+                                <ul class="dropdown">
+                                    <li><a id="galeria" href="GALERIA.html">&gt;galeria</a></li>
+                                    <li><a id="escritos" href="ESCRITOS.html">&gt;escritos</a></li>
+                                    <li><a id="postagens" href="POSTAGENS.html">&gt;postagens</a></li>
+                                </ul>
+                            </li>
+                            <li class="tem-dropdown"><a id="sobre" href="SOBRE.html">&gt;sobre</a>
+                                <ul class="dropdown">
+                                    <li><a id="sobreocalupa" href="SOBREOCALUPA.html">&gt;sobre_o_calupa</a></li>
+                                    <li><a id="transparencia" href="TRANSPARENCIA.html">&gt;transparência</a></li>
+                                    <li><a id="submissoes" href="SUBMISSOES.html">&gt;submissões</a></li>
+                                    <li><a id="contato" href="CONTATO.html">&gt;contato</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav><!--MENUPC-->
+
+                    <label class="btn-tema" id="tema">
+                        <input type="checkbox" id="tema-check">
+                        <span class="track">
+                            <span class="thumb">
+                                <span class="icon">☀</span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </div><!--interface-->
+        </header>
+
+        <main>
+            <section class="HEROESC">
+                <div class="HERO">
+                    <H1>&gt;GALERIA_DO_CALUPA</H1>
+                    <p class="subtitleHERO">meio de partilha das produções em rede com livre acesso para apreciação.
+                        mande sua produção para armazenar no site e compartilhar!</p>
+                </div>
+            </section>
+
+            <div class="PESQUISA">
+                <input type="text" id="campoPesquisa" placeholder=">pesquisar...">
+
+                <div class="FILTROS">
+                    <button class="filtro ativo" data-filtro="todos">todos</button>        
+                    <button class="filtro" data-filtro="2025">&gt;2025</button>
+                    <button class="filtro" data-filtro="2023">&gt;2023</button>
+                </div>
+            </div>
+
+            <section class="SECESC01">
+                <a class="TX00000 ITEM" data-ano="2025" href="galeria--cloroformio-guarda-chuva-preto.html">
+                    <div class="CONTAINERTXS">
+                        <div class="FTESC">
+                            <img src="imagens/02_ACERVO/02-1_GALERIA/cloroformio-guarda-chuva_preto/WhatsApp Image 2026-03-31 at 10.14.14.jpeg" alt="CALABOUCY">
+                        </div><!--FTESC-->
+
+                        <div class="TXESC">
+                            <H1>&gt;GUARDA-CHUVA PRETO (2025 -)</H1>
+                            <p>por clorofórmio.</p>
+                        </div><!--TXESC-->
+                    </div><!--CONTAINERTXS-->
+                </a>
+
+            <section class="SECESC01">
+                <a class="TX00000 ITEM" data-ano="2025" href="galeria--cloroformio-mapeamento-de-guerrilha.html">
+                    <div class="CONTAINERTXS">
+                        <div class="FTESC">
+                            <img src="imagens/02_ACERVO/02-1_GALERIA/cloroformio-mapeamento_de_guerrilha/rolagemhorizontal_mdg.png" alt="CALABOUCY">
+                        </div><!--FTESC-->
+
+                        <div class="TXESC">
+                            <H1>&gt;MAPEAMENTO DE GUERRILHA (2025 -)</H1>
+                            <p>por clorofórmio.</p>
+                        </div><!--TXESC-->
+                    </div><!--CONTAINERTXS-->
+                </a>
+
+                <a class="TX00000 ITEM" data-ano="2023" href="galeria--cloroformio-segunda-acao.html">
+                    <div class="CONTAINERTXS">
+                        <div class="FTESC">
+                            <img src="imagens/02_ACERVO/02-1_GALERIA/cloroformio-segunda_acao/IMG_0683.png" alt="AAAAAA">
+                        </div><!--FTESC-->
+
+                        <div class="TXESC">
+                            <H1>&gt;SEGUNDA AÇÃO (2023 -)</H1>
+                            <p>por clorofórmio.</p>
+                        </div><!--TXESC-->
+                    </div><!--CONTAINERTXS-->
+                </a>
+
+                <a class="TX00000 ITEM" data-ano="2023" href="galeria--cloroformio-primeira-acao.html">
+                    <div class="CONTAINERTXS">
+                        <div class="FTESC">
+                            <img src="imagens/02_ACERVO/02-1_GALERIA/cloroformio-primeira_acao/pixo (4).png" alt="AAAAAA">
+                        </div><!--FTESC-->
+
+                        <div class="TXESC">
+                            <H1>&gt;PRIMEIRA AÇÃO (2023 -)</H1>
+                            <p>por clorofórmio.</p>
+                        </div><!--TXESC-->
+                    </div><!--CONTAINERTXS-->
+                </a>
+
+            </section><!--SECESC01-->
+
+            <div class="PAGINACAO">
+                <button class="pag-btn" id="anterior">⟨</button>
+                <div class="pag-nums" id="pagNums"></div>
+                <button class="pag-btn" id="proximo">⟩</button>
+            </div>
+
+        </main>
+    </div><!--fimcorpo-todo-->
+
+    <footer class="FOOTERCONTAINER">
+        <div class="FOOTERINNER">
+            <ul>
+                <img src="imagens/logoCALUPA (horizontal)_ede5d0.svg" alt="">
+            </ul>
+            <ul>
+                <div><span>EMAIL_</span>calupavisuais2026@gmail.com</div>
+                <div><span>INSTAGRAM_</span>@calupauel</div>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/tema.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/pesquisa.js"></script>
+    <script src="js/paginacao.js"></script>
+</body>

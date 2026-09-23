@@ -1,0 +1,50 @@
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#lightbox.ativo {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#lightbox-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+#lightbox-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+#lightbox-fechar {
+  background: transparent;
+  border: 1px solid #e1b545;
+  border-radius: 999px;
+  padding: 6px 20px;
+  color: #e1b545;
+  font-family: 'Ubuntu Mono';
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#lightbox-fechar:hover {
+  background: #e1b545;
+  color: #111111;
+  font-style: italic;
+}

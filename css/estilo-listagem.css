@@ -1,0 +1,295 @@
+body {
+    background-color: #a93535;
+}
+
+main {
+    max-width: 720px;
+    margin: 48px auto 48px;
+    line-height: 1.5;
+    padding: 0 24px;
+}
+
+.INTERFACEHEADER {
+    box-shadow: 0 0 25px #58473c56;
+}
+
+
+body.escuro .INTERFACEHEADER {
+    box-shadow: none;
+}
+
+body.escuro .HERO H1 {
+    color: #af397e;
+}
+
+
+body.escuro .TXESC p {
+  color: #ede5d0;
+}
+
+body.escuro .TXESC H1 {
+  color: #a93535;
+}
+
+
+.HEROESC .HERO H1 {
+    color: #e1b545;
+    text-align: justify;
+    font-size: 50px;
+}
+
+.HEROESC p {
+    color: #ede5d0;
+}
+
+.subtitleHERO {
+    line-height: 1.5;
+    overflow: hidden;
+    column-rule: 1px solid #00000000;
+}
+
+.PESQUISA {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+#campoPesquisa {
+    background: transparent;
+    border: 1px solid #e1b545;
+    border-radius: 999px;
+    padding: 12px 24px;
+    font-family: 'Ubuntu Mono';
+    font-size: 18px;
+    color: #ede5d0;
+    outline: none;
+    max-width: 1200px;
+    transition: ease .5s;
+}
+
+#campoPesquisa::placeholder {
+    color: #e1b54556;
+}
+
+#campoPesquisa:focus {
+    border-color: #ede5d0;
+    transition: ease .5s;
+    background-color: #03030311;
+}
+
+.FILTROS {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.filtro {
+    background: transparent;
+    border: 1px solid #e1b545;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-family: 'Ubuntu Mono';
+    font-size: 18px;
+    color: #e1b545;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtro:hover {
+    background: #e1b545;
+    color: #a93535;
+    font-style: italic;
+}
+
+.filtro.ativo {
+    background: #e1b545;
+    color: #a93535;
+}
+
+.SECESC01 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.SECESC01 H1 {
+    color: #af397e;
+}
+
+.SECESC01 p {
+    color: #58473c;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.TX00000 {
+    text-decoration: none;
+}
+
+.CONTAINERTXS {
+    background-color: #ede5d0;
+    border-radius: 16px;
+    max-width: 720px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    transition: ease .5s;
+}
+
+.CONTAINERTXS:hover {
+    scale: 100.8%;
+    transition: 0.5s;
+    box-shadow: 0px 0px 15px #58473c56;
+}
+
+.TXESC {
+    align-self: flex-start;
+    min-width: none;
+    flex: 1;
+    text-align: justify;
+}
+
+.FTESC img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    transition: 0.5s ease;
+    filter: saturate(20%);
+}
+
+.FTESC img:hover {
+    filter: saturate(100%);
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* PAGINAÇÃO */
+.PAGINACAO {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 48px 0;
+}
+
+.pag-btn,
+.pag-num {
+    text-decoration: none;
+    font-family: 'Ubuntu Mono';
+    font-size: 18px;
+    color: #e1b545;
+    background: transparent;
+    border: 1px solid #e1b545;
+    border-radius: 999px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pag-btn:hover,
+.pag-num:hover {
+    background: #e1b545;
+    color: #a93535;
+    font-style: italic;
+}
+
+.pag-num.ativo {
+    background: #e1b545;
+    color: #a93535;
+}
+
+.pag-nums {
+    display: flex;
+    gap: 8px;
+}
+
+.TXESC h1 {
+    word-break: break-word;
+    overflow: break-word;
+}
+
+.TXESC p {
+    line-height: 1;
+}
+
+.GRADE-POSTAGENS {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.GRADE-POSTAGENS .CARDESC {
+    max-width: 100%;
+}
+
+.GRADE-POSTAGENS .CARDESC .TXSECT01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.GRADE-POSTAGENS h1 {
+    color: #af397e;
+    word-break: break-word;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.GRADE-POSTAGENS p {
+    color: #58473c;
+    vertical-align: bottom;
+}
+
+.GRADE-POSTAGENS a {
+    text-decoration: none;
+}
+
+.GRADE-POSTAGENS .FIXAARTG {
+    height: auto;
+    width: auto;
+}
+
+.GRADE-POSTAGENS .FIXAARTG img:hover {
+    filter: saturate(100%);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.COPYPASTEsub {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0;
+    width: 100%;
+}
+
+.textoSUB {
+    border: 1px solid #e1b545;
+    font-family: 'Ubuntu Mono';
+    color: #e1b545;
+    width: 350px;
+    padding: 16px 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.textoSUB span {
+    font-weight: bolder;
+}
+
+.textoSUB p {
+    text-align: center;
+    line-height: 10px
+}
+
+body.escuro .textoSUB {
+    background-color: transparent;
+    border: 1px solid #e1b545;
+    color: #e1b545;
+
+}

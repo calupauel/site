@@ -1,0 +1,96 @@
+body.escuro .titulotxt p {
+    color: #e1b545;
+    font-style: italic;
+    background-color: #af397e;
+    margin-top: -40px;
+    margin-left: 0px;
+}
+
+.COLUNASDETEXTO {
+    max-width: 720px;
+    margin: 48px auto 100px;
+    text-indent: 20px;
+    line-height: 1.5;
+    padding: 0 24px;
+}
+
+.COLUNASDETEXTO .titulotxt h1 {
+    text-align: justify;
+    margin: 0;
+    text-indent: 0;
+    line-height: 1;
+    margin-bottom: 48px;
+}
+
+.COLUNASDETEXTO p {
+    color: #58473c;
+}
+
+.autoriatxt {
+    margin-bottom: 48px;
+}
+
+.nomeautore {
+    text-align: right;
+    line-height: .5;
+}
+
+.REFN {
+    vertical-align: super;
+    font-size: 75%;
+    color: #a93535;
+}
+
+.imagenstxt img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: .3s ease;
+    margin-bottom: 24px;
+}
+
+.imagenstxt img:hover {
+    cursor: pointer;
+    scale: 99%;
+    transition: .5s ease;
+    box-shadow: 0 0 25px #58473c56;
+}
+
+
+.COPYPASTEsub {
+    margin-left: 449px;
+    margin-right: 449px;
+}
+
+.NEGRITOTX {
+    font-weight: bolder;
+}
+
+.CITAC {
+    font-size: 80%;
+    margin-left: 48px;
+}
+
+.titulotxt p {
+    color: #e1b545;
+    font-style: italic;
+    background-color: #a93535;
+    margin-top: -40px;
+    margin-left: 0px;
+}
+
+.imagenstxt {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(33.333% - 16px), 1fr));
+    gap: 12px;
+    max-width: 100%;
+}
+
+.imagenstxt img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
